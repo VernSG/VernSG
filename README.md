@@ -1,7 +1,4 @@
-<p align="center">
-<img height="180px" src="https://lanyard.cnrad.dev/api/216282035503890442?theme=dark&idleMessage=☄%20Valllllllkkyyyriieeeee%20☄&bg=050F2C&showDisplayName=true" />
-</p>
-<p align="center"> <img src="https://count.getloli.com/get/@Ritshu?theme=rule34" alt="ritshu" /> </p>
+<p align="center"> <img src="https://count.getloli.com/get/@Ritshu?theme=rule34" alt="Vern" /> </p>
 
 ### <p align="center">Language and Tools</p>
 <div align="center">
