@@ -1,5 +1,3 @@
-<p align="center"> <img src="https://count.getloli.com/get/@Ritshu?theme=rule34" alt="Vern" /> </p>
-
 ### <p align="center">Language and Tools</p>
 <div align="center">
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-plain.svg" height="40" width="52" alt="Python logo"  />
