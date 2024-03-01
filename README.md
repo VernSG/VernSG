@@ -11,6 +11,7 @@
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" height="40" width="52" alt="linux logo"  />
   
 </div>
+<br>
 <p align="center">
   <a href"[https://discord.com/users/689131590319865973](https://lanyard.cnrad.dev/api/689131590319865973)"><img src="https://lanyard.cnrad.dev/api/689131590319865973"/></a>
 </p>
