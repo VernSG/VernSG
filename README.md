@@ -1,3 +1,5 @@
+![Header](https://capsule-render.vercel.app/api?type=waving&color=AA77FF&section=header&height=250&reversal=false&text=Faiz%20Dzaki&desc=Yet%20Another%20Software%20and%20Website%20Developer&animation=fadeIn&fontAlign=70&fontAlignY=37&descAlign=65&descAlignY=54&fontColor=191825)
+
 ### <p align="center">Language and Tools</p>
 <div align="center">
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" height="40" width="52" alt="html logo" />
