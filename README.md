@@ -14,3 +14,6 @@
    <img height="150px" src="https://github-readme-stats-sigma-five.vercel.app/api?username=VernSG&show_icons=true&count_private=true&theme=algolia" />&nbsp;<img height="150px" src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=VernSG&layout=compact&count_private=true&theme=algolia" alt="Vern" />
 </p>
 
+<p align="center">
+  <a href"https://discord.com/users/689131590319865973"><img src="https://lanyard.cnrad.dev/api/689131590319865973"/></a>
+</p>
