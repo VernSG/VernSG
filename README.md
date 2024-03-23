@@ -1,5 +1,7 @@
 ![Header](https://capsule-render.vercel.app/api?type=waving&color=AA77FF&section=header&height=250&reversal=false&text=Yusuf%20Saputra&desc=Yet%20Another%20Software%20and%20Game%20Developer&animation=fadeIn&fontAlign=70&fontAlignY=37&descAlign=65&descAlignY=54&fontColor=191825)
 
+<p align="left"> <img src="https://komarev.com/ghpvc/?username=VernSG&label=Profile%20views&color=0e75b6&style=flat" alt="vernsg" /> </p>
+
 ### <p align="center">Language and Tools</p>
 <div align="center">
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" height="40" width="52" alt="html logo" />
