@@ -15,7 +15,7 @@
 ## Stats
 
 <p align="center">
-	<a href="https://github.com/ndrvndr">
+	<a href="https://github.com/Vern_SG">
 		<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=VernSG&layout=compact&theme=github_dark&hide_border=true" alt="GitHub Stats Card" /><br />
 		<img src="https://github-readme-stats.vercel.app/api?username=ndrvndr&show_icons=true&theme=github_dark&hide_border=true" alt="Top Languages Card" /><br />
 		<img src="https://github-readme-streak-stats.herokuapp.com/?user=VernSG&theme=github-dark-blue&hide_border=true" alt="GitHub Stats Streak" /><br />
