@@ -54,12 +54,6 @@
    	 </a>&nbsp;
 	<a href="https://react.dev/" target="_blank" rel="noopener noreferrer">
     	<img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="react" />
-   	</a>&nbsp;
-	<a href="https://redux.js.org/" target="_blank" rel="noopener noreferrer">
-    	<img src="https://img.shields.io/badge/redux-%2523593d88.svg?style=for-the-badge&logo=redux&logoColor=white" alt="redux" />
-   	</a>&nbsp;
-	<a href="https://nextjs.org/" target="_blank" rel="noopener noreferrer">
-    	<img src="https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white" alt="next.js" />
    	</a>
 </p>
 
@@ -107,8 +101,6 @@
 
 </details>
 
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
-
 ## Social
 
 <p align="left">
@@ -117,9 +109,6 @@
 	</a>
 	<a href="https://instagram.com/yusufff.rttex" target="blank">
 		<img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="ndr.vndr" height="30" width="40" />
-	</a>
-	<a href="https://www.hackerrank.com/andreavindra37" target="blank">
-		<img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/hackerrank.svg" alt="andreavindra37" height="30" width="40" />
 	</a>
 </p>
 
