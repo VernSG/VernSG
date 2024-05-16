@@ -6,7 +6,7 @@
 </p>
 
 <p align="center">
-	<img src="https://komarev.com/ghpvc/?username=ndrvndr&color=447ff7&label=Profile+views" alt="Visitor Count Badge" />
+	<img src="https://komarev.com/ghpvc/?username=VernSG&color=447ff7&label=Profile+views" alt="Visitor Count Badge" />
 </p>
 <p align="center">
   <a href="https://github.com/DenverCoder1/readme-typing-svg"><img src="https://readme-typing-svg.herokuapp.com?lines=Welcome+to+my+Github+Profile+:);Front-End+Web+Developer&center=true&width=380&height=45"></a>
@@ -84,10 +84,6 @@
 
 ### Software
 
-<p align="left">
-	<a href="https://www.figma.com/" target="_blank" rel="noopener noreferrer">
-    	<img src="https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white" alt="figma" />
-   	 </a>&nbsp;
 	<a href="https://postman.com" target="_blank" rel="noopener noreferrer">
     	<img src="https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white" alt="postman" />
     </a>&nbsp;
@@ -105,7 +101,7 @@
 
 <p align="left">
 	<a href="https://linkedin.com/in/muhammad-yusuf-saputra" target="blank">
-		<img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="andre-avindra" height="30" width="40" />
+		<img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="yusuf" height="30" width="40" />
 	</a>
 	<a href="https://instagram.com/yusufff.rttex" target="blank">
 		<img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="ndr.vndr" height="30" width="40" />
@@ -117,7 +113,7 @@
 ## Reach Me
 
 <p align="left">
-	<a href="mailto:snexmMania#@gmail.com" target="_blank" rel="noopener noreferrer">
+	<a href="mailto:snexmania76@gmail.com" target="_blank" rel="noopener noreferrer">
 		<img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="gmail" />
 	</a>
 </p>
