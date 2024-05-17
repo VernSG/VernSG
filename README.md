@@ -12,21 +12,6 @@
   <a href="https://github.com/DenverCoder1/readme-typing-svg"><img src="https://readme-typing-svg.herokuapp.com?lines=Welcome+to+my+Github+Profile+:);Front-End+Web+Developer&center=true&width=380&height=45"></a>
 </p>
 
-## Stats
-
-<p align="center">
-	<a href="https://github.com/Vern_SG">
-		<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=VernSG&layout=compact&theme=github_dark&hide_border=true" alt="GitHub Stats Card" /><br />
-		<img src="https://github-readme-stats.vercel.app/api?username=ndrvndr&show_icons=true&theme=github_dark&hide_border=true" alt="Top Languages Card" /><br />
-		<img src="https://github-readme-streak-stats.herokuapp.com/?user=VernSG&theme=github-dark-blue&hide_border=true" alt="GitHub Stats Streak" /><br />
-	</a>
- 	<a href="https://wakatime.com/@ndrvndr">
-		<img height="150" src="https://github-readme-stats.vercel.app/api/wakatime?username=VernSG&theme=react&langs_count=6" />
-	</a>
-</p>
-
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
-
 ## Skills
 
 <details>
