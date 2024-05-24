@@ -97,6 +97,11 @@
 
 </details>
 
+## Most Languages and Projects
+| Top Languages | Top Projects |
+|---------------|--------------|
+| [![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=VernSG&layout=compact&theme=radical)](https://github.com/VernSG/github-readme-stats) | [![Top Projects](https://github-readme-stats.vercel.app/api/pin/?username=VernSG&repo=V2&show_owner=true&theme=radical)](https://github.com/VernSG/V2.git)|
+
 ## Social
 
 <p align="left">
