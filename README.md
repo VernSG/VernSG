@@ -15,7 +15,7 @@
 ## Stats
 
  <p align="center">
-  <h4> Full-stack Dev | Competitive Programming </h4>
+  <h4> Front-End Dev | Competitive Programming </h4>
    </p>
 
 <!--  -->
