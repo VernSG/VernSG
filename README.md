@@ -1,9 +1,3 @@
-
- <p align="center">
-  <h4> Front-End Dev | Competitive Programming </h4>
-   </p>
-
-
 ## Most Languages and Projects
 | Top Languages | 
 |---------------|
