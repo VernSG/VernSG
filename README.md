@@ -5,8 +5,6 @@
 	<img src="https://komarev.com/ghpvc/?username=VernSG&color=447ff7&label=Profile+views" alt="Visitor Count Badge" />
 </p>
 
-## Stats
-
  <p align="center">
   <h4> Front-End Dev | Competitive Programming </h4>
    </p>
