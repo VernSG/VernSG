@@ -4,6 +4,7 @@
 <p align="center">
 	<img src="https://komarev.com/ghpvc/?username=VernSG&color=447ff7&label=Profile+views" alt="Visitor Count Badge" />
 </p>
+
 ## Stats
 
  <p align="center">
@@ -25,7 +26,7 @@
 <summary>Full Skills (click to toggle)</summary>
 	
 ### Programming Languages
-<p align="left>
+<p align="center>
 	<a href="https://developer.mozilla.org/en-US/docs/Web/JavaS
     	<img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="javascript" />
    	 </a>&nbsp;
