@@ -1,17 +1,9 @@
-<h1 align="center">
-	Hi there 👋, I'm Muhammad Yusuf Saputra
-</h1>
-<p align="center">
-	You can call me Yusuf
-</p>
-
-<p align="center">
-	<img src="https://komarev.com/ghpvc/?username=VernSG&color=447ff7&label=Profile+views" alt="Visitor Count Badge" />
-</p>
 <p align="center">
   <a href="https://github.com/DenverCoder1/readme-typing-svg"><img src="https://readme-typing-svg.herokuapp.com?lines=Welcome+to+my+Github+Profile+:);Front-End+Web+Developer&center=true&width=380&height=45"></a>
 </p>
-
+<p align="center">
+	<img src="https://komarev.com/ghpvc/?username=VernSG&color=447ff7&label=Profile+views" alt="Visitor Count Badge" />
+</p>
 ## Stats
 
  <p align="center">
