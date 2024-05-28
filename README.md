@@ -122,7 +122,3 @@
 		<img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="gmail" />
 	</a>
 </p>
-<br>
-<p align="center">
-  <a href"[https://discord.com/users/689131590319865973](https://lanyard.cnrad.dev/api/689131590319865973)"><img src="https://lanyard.cnrad.dev/api/689131590319865973"/></a>
-</p>
