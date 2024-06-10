@@ -4,7 +4,7 @@
 Software Engineering Vocational School graduate with a passion for technology, especially **Fullstacks development**<br>
 I like making Website and learn networking
 
-[![](https://skillicons.dev/icons?i=js,ts,html,css,nodejs,vultr,aws,azure,windows,ubuntu,react,nextjs,firebase,tailwind,vercel&perline=9)](https://skillicons.dev)
+[![](https://skillicons.dev/icons?i=js,ts,html,css,nodejs,aws,azure,windows,ubuntu,react,nextjs,firebase,tailwind,vercel&perline=9)](https://skillicons.dev)
 
 ![](https://komarev.com/ghpvc/?username=vernsg&label=Profile%20views&color=0e75b6&style=flat)
 
