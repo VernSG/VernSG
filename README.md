@@ -1,7 +1,7 @@
 # Hello there ヾ(•ω•`) I'm Yusuf ✨
 
 **Muhammad Yusuf**, 18 years old and I am a **Fullstacks Developer**<br>
-Software Engineering Vocational School graduate with a passion for technology, especially **Fullstacks development**<br>
+A graduate of a State Islamic Senior High School with a strong interest in technology, particularly **Website development**<br>
 I like making Website and learn networking
 
 [![](https://skillicons.dev/icons?i=js,ts,html,css,nodejs,aws,azure,windows,ubuntu,react,nextjs,firebase,tailwind,vercel&perline=9)](https://skillicons.dev)
