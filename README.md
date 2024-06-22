@@ -1,5 +1,3 @@
-![logo](https://github.com/VernSG/VernSG/blob/main/ed01ed9d-659e-46ae-bb3c-da2c222262f1.gif)
-
 # Hello there ヾ(•ω•`) I'm Yusuf ✨
 
 **Muhammad Yusuf**, 18 years old and I am a **Fullstacks Developer**<br>
