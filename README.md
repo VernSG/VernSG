@@ -10,5 +10,14 @@ I like making Website and learn networking
 
 ![](https://github-readme-stats.vercel.app/api/top-langs/?username=vernsg&layout=donut&theme=holi)
 
+<div align="center">
+  <picture align="center">
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/platane/platane/output/github-contribution-grid-snake-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/platane/platane/output/github-contribution-grid-snake.svg">
+    <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/platane/platane/output/github-contribution-grid-snake.svg">
+  </picture>
+</div>
+
+
 ## ✉️ Reach me
 - [yusufkartein@gmail.com](mailto:yusufkartein@gmail.com)
