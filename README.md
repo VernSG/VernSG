@@ -1,6 +1,4 @@
 
-[![Discord Bots](https://top.gg/api/widget/1256409606373113988.svg)(https://top.gg/bot/1256409606373113988)
-
   [![wakatime](https://github-readme-stats.vercel.app/api/wakatime?username=vernsg&layout=compact&theme=holi)](https://wakatime.com/@VernSG)
 
 
