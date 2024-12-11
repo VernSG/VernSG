@@ -39,5 +39,13 @@ Discord: panggilajasyris
   </span>
 </div>
 
+
+<details>
+  <summary>Wakatime</summary>
+ 
+  [![wakatime](https://github-readme-stats.vercel.app/api/wakatime?username=vernsg&layout=compact&theme=holi)](https://wakatime.com/@VernSG)
+</details>
+
+
 ## ✉️ Reach me
 - [snexmania76@gmail.com](mailto:snexmania76@gmail.com)
