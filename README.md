@@ -29,10 +29,15 @@ Discord: panggilajasyris
 </p>
 
 <div align="center">
-[![wakatime](https://wakatime.com/badge/user/b949dc40-f954-48a5-bd71-7a429c28eaa7.svg)](https://wakatime.com/@b949dc40-f954-48a5-bd71-7a429c28eaa7)
-
-
-![](https://komarev.com/ghpvc/?username=vernsg&label=Profile%20views&color=0e75b6&style=flat)
+  <span style="display: inline-block; margin-right: 10px;">
+    <a href="https://wakatime.com/@b949dc40-f954-48a5-bd71-7a429c28eaa7">
+      <img src="https://wakatime.com/badge/user/b949dc40-f954-48a5-bd71-7a429c28eaa7.svg" alt="wakatime badge">
+    </a>
+  </span>
+  <span style="display: inline-block;">
+    <img src="https://komarev.com/ghpvc/?username=vernsg&label=Profile%20views&color=0e75b6&style=flat" alt="Profile views">
+  </span>
 </div>
+
 ## ✉️ Reach me
 - [snexmania76@gmail.com](mailto:snexmania76@gmail.com)
