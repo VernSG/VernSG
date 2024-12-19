@@ -44,6 +44,11 @@ Discord: panggilajasyris
   <summary>Wakatime</summary>
  
   [![wakatime](https://github-readme-stats.vercel.app/api/wakatime?username=vernsg&layout=compact&theme=holi)](https://wakatime.com/@VernSG)
+
+  <summary>Most used lang</summary>
+
+  
+![](https://github-readme-stats.vercel.app/api/top-langs/?username=VernSG&layout=donut&theme=holi)
 </details>
 
 
