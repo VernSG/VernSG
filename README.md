@@ -2,8 +2,7 @@
 > Vern
 ```
 
-
-<img align="left" src="https://res.cloudinary.com/djsdnb4td/image/upload/v1733302383/follow_z8vs4u.jpg" alt="alamak" width="320" /> 
+ 
 
 ```csharp
 VernSG@github
