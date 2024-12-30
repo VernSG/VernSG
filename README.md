@@ -15,7 +15,7 @@ VernSG@github
  Terminal : kitty 0.37.0
 Pronouns: He/Him
 Location: Indonesia
-Frameworks: React, Next, Node JS
+Frameworks: React, Next, Node JS, Laravel.
 Languages: JavaScript, TypeScript,
            PHP.
 Hobbies: nothing
