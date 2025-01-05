@@ -4,29 +4,6 @@
   </a>
 </p>
 
-```zsh
-> Vern
-```
-
- 
-
-```csharp
-VernSG@github
--------------------------
- OS : Arch Linux x86_64
- Kernel : Linux 6.11.6-arch1-1
- Packages : 990 (pacman)
- Display : 1920x1080 @ 60 Hz in 14" [Built-in]
- WM : Mutter (Wayland)
- Terminal : kitty 0.37.0
-Pronouns: He/Him
-Location: Indonesia
-Frameworks: React, Next, Node JS, Laravel.
-Languages: JavaScript, TypeScript,
-           PHP.
-Hobbies: nothing
-Discord: panggilajasyris
-```
 
 <p align="left">
   &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
