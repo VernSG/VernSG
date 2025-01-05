@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://yusufs.me">
-    <img alt="title" src="/sigma2.png" />
+    <img alt="title" src="/sigma4-Photoroom.png" />
   </a>
 </p>
 
