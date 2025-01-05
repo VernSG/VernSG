@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://yusufs.me">
-    <img alt="title" src="/IMG-20250105-WA0075-ai-brush-removebg-ag0094co.png" />
+    <img alt="title" src="/IMG-20250105-WA0075-ai-brush-removebg-tqmupmz5.png" />
   </a>
 </p>
 
