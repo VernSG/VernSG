@@ -1,3 +1,9 @@
+<p align="center">
+  <a href="https://yusufs.me">
+    <img alt="title" src="/sigma.png" />
+  </a>
+</p>
+
 ```zsh
 > Vern
 ```
