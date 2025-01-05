@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://yusufs.me">
-    <img alt="title" src="/sigma4-Photoroom.png" />
+    <img alt="title" src="/IMG-20250105-WA0075-ai-brush-removebg-ag0094co.png" />
   </a>
 </p>
 
