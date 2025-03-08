@@ -1,0 +1,33 @@
+{
+  "name": "@vernsg/commitlint-config",
+  "version": "1.0.0",
+  "description": "commitlint config",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/VernSG/VernSG.git",
+    "directory": "packages/commitlint-config"
+  },
+  "keywords": [
+    "commitlint",
+    "config"
+  ],
+  "author": "VernSG",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/VernSG/VernSG/issues"
+  },
+  "homepage": "https://github.com/VernSG/VernSG/tree/main/packages/commitlint-config#readme",
+  "peerDependencies": {
+    "@commitlint/cli": ">=8.0.0"
+  },
+  "dependencies": {
+    "@commitlint/config-conventional": "^18.6.3"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^19.8.0"
+  }
+}
