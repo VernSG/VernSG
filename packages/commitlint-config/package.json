@@ -5,7 +5,7 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/VernSG/VernSG.git",
+    "url": "git+https://github.com/VernSG/VernSG.git",
     "directory": "packages/commitlint-config"
   },
   "keywords": [
