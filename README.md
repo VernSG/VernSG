@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://vernsg.is-a.dev">
-    <img alt="title" src="/Notfound.png" />
+    <img alt="title" src="/NotFound.png" />
   </a>
 </p>
 
