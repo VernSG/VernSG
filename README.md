@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://vernsg.is-a.dev">
-    <img alt="title" src="/IMG-20250105-WA0075-ai-brush-removebg-tqmupmz5.png" />
+    <img alt="title" src="/Notfound.png" />
   </a>
 </p>
 
