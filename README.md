@@ -39,8 +39,7 @@
 
 ---
 
-#### `// authored packages & projects`
-
+- **[anti-slop](https://github.com/VernSG/VernSG/tree/main/packages/anti-slop)** — Multi-agent skills and CLI linter to eliminate AI slop from PR descriptions & commit messages
 - **[nusa-filament](https://github.com/VernSG/nusa-filament)** — Filament form components for Indonesian administrative regions
 - **[Komiku-Rest-Api](https://github.com/VernSG/Komiku-Rest-Api)** — Manga discovery & chapter reading REST API built with Node.js & Cheerio
 - **[laravel-fastboot](https://github.com/VernSG/laravel-fastboot)** — High-performance Laravel rapid starter kit & project boilerplate
