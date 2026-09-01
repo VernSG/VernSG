@@ -1,0 +1,38 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "SlopLexicon",
+  "type": "object",
+  "required": ["name", "version", "categories"],
+  "properties": {
+    "name": { "type": "string" },
+    "version": { "type": "string" },
+    "source": { "type": "string" },
+    "description": { "type": "string" },
+    "categories": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "required": ["severity", "penalty", "description", "terms"],
+        "properties": {
+          "severity": { "type": "string", "enum": ["low", "medium", "high", "critical"] },
+          "penalty": { "type": "number", "minimum": 1, "maximum": 100 },
+          "description": { "type": "string" },
+          "terms": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["term", "replacement", "example_bad", "example_good"],
+              "properties": {
+                "term": { "type": "string" },
+                "lift": { "type": "number" },
+                "replacement": { "type": "string" },
+                "example_bad": { "type": "string" },
+                "example_good": { "type": "string" }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

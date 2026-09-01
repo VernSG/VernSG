@@ -1,0 +1,6 @@
+# Windsurf Anti-Slop Rules
+
+- Strictly ban dramatic architecture jargon and AI fillers in git summaries:
+  - Banned: "load-bearing", "seam", "quietly", "latent", "survived", "genuine", "robust", "delve".
+- Follow the 2-Sentence Rule: Sentence 1 (What changed technically) + Sentence 2 (Why it changed).
+- Keep descriptions factual, concise, and grounded in the diff.

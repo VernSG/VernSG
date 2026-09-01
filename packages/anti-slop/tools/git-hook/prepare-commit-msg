@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+# Git hook to validate commit messages against AI Slop Lexicon
+
+COMMIT_MSG_FILE=$1
+COMMIT_SOURCE=$2
+
+# Check commit message content
+if [ -f "$COMMIT_MSG_FILE" ]; then
+  COMMIT_TEXT=$(cat "$COMMIT_MSG_FILE")
+  
+  # Run unslop linter
+  if command -v npx >/dev/null 2>&1; then
+    npx --no-install @vernsg/anti-slop lint "$COMMIT_TEXT"
+    STATUS=$?
+    if [ $STATUS -ne 0 ]; then
+      echo "❌ Commit rejected by Anti-Slop hook. Please use plain, factual language."
+      exit 1
+    fi
+  fi
+fi
+
+exit 0

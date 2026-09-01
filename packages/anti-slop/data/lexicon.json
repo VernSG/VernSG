@@ -1,0 +1,205 @@
+{
+  "$schema": "./schema.json",
+  "name": "anti-slop-lexicon",
+  "version": "1.0.0",
+  "source": "https://louisabraham.github.io/load-bearing/",
+  "description": "Empirically tracked AI-generated clichés, structural metaphors, and hyperbolic vocabulary extracted from 461k+ GitHub PRs.",
+  "categories": {
+    "structural_metaphor": {
+      "severity": "high",
+      "penalty": 25,
+      "description": "Metaphorical architectural phrasing used to exaggerate trivial code modifications.",
+      "terms": [
+        {
+          "term": "load-bearing",
+          "lift": 123.04,
+          "replacement": "critical / required / core",
+          "example_bad": "protects a load-bearing seam across the auth layer",
+          "example_good": "prevents null pointer exception in auth handler"
+        },
+        {
+          "term": "seam",
+          "lift": 84.12,
+          "replacement": "interface / boundary / module",
+          "example_bad": "safeguards the architectural seam",
+          "example_good": "updates the payment gateway interface"
+        },
+        {
+          "term": "latent",
+          "lift": 62.50,
+          "replacement": "hidden / potential / existing",
+          "example_bad": "fixes a latent race condition in session sync",
+          "example_good": "fixes race condition during token refresh"
+        },
+        {
+          "term": "survived",
+          "lift": 58.20,
+          "replacement": "persists / remains / handled",
+          "example_bad": "ensures state survived across restarts",
+          "example_good": "persists session state to disk"
+        },
+        {
+          "term": "tectonic",
+          "lift": 41.30,
+          "replacement": "major / breaking / fundamental",
+          "example_bad": "initiates a tectonic shift in query caching",
+          "example_good": "migrates cache store from memory to redis"
+        },
+        {
+          "term": "fracture",
+          "lift": 38.90,
+          "replacement": "break / fail / error",
+          "example_bad": "prevents fracturing under concurrent loads",
+          "example_good": "handles thread contention safely"
+        }
+      ]
+    },
+    "dramatic_verbs": {
+      "severity": "medium",
+      "penalty": 15,
+      "description": "Over-embellished or melodramatic verbs describing ordinary programming operations.",
+      "terms": [
+        {
+          "term": "quietly",
+          "lift": 95.40,
+          "replacement": "omits / suppresses / defaults",
+          "example_bad": "quietly ignores invalid headers",
+          "example_good": "drops invalid headers without throwing"
+        },
+        {
+          "term": "delve",
+          "lift": 88.70,
+          "replacement": "inspect / analyze / parse",
+          "example_bad": "delves into nested payload trees",
+          "example_good": "traverses AST payload nodes"
+        },
+        {
+          "term": "orchestrate",
+          "lift": 45.10,
+          "replacement": "coordinate / manage / run",
+          "example_bad": "orchestrates the synchronization flow",
+          "example_good": "calls sync worker in background"
+        },
+        {
+          "term": "safeguard",
+          "lift": 52.30,
+          "replacement": "validate / check / guard",
+          "example_bad": "safeguards against unexpected nulls",
+          "example_good": "adds null checks to user input"
+        },
+        {
+          "term": "pave the way",
+          "lift": 49.80,
+          "replacement": "prepares / enables / supports",
+          "example_bad": "paves the way for future telemetry enhancements",
+          "example_good": "adds telemetry hook interface"
+        },
+        {
+          "term": "streamline",
+          "lift": 36.20,
+          "replacement": "simplify / refactor / clean up",
+          "example_bad": "streamlines execution pipelines",
+          "example_good": "removes redundant middleware steps"
+        }
+      ]
+    },
+    "ai_filler_adjectives": {
+      "severity": "medium",
+      "penalty": 12,
+      "description": "Empty formal adjectives that inflate text without adding technical facts.",
+      "terms": [
+        {
+          "term": "genuine",
+          "lift": 71.30,
+          "replacement": "valid / real / actual",
+          "example_bad": "verifies genuine requests",
+          "example_good": "validates request signature"
+        },
+        {
+          "term": "robust",
+          "lift": 66.80,
+          "replacement": "error-handled / resilient / tested",
+          "example_bad": "provides a robust mechanism for errors",
+          "example_good": "adds retry logic with exponential backoff"
+        },
+        {
+          "term": "seamless",
+          "lift": 59.40,
+          "replacement": "direct / automated / uninterrupted",
+          "example_bad": "ensures seamless user onboarding",
+          "example_good": "redirects user to dashboard after signup"
+        },
+        {
+          "term": "pivotal",
+          "lift": 44.10,
+          "replacement": "key / primary / main",
+          "example_bad": "a pivotal adjustment to the routing table",
+          "example_good": "updates fallback route match logic"
+        },
+        {
+          "term": "crucial",
+          "lift": 39.50,
+          "replacement": "necessary / required",
+          "example_bad": "implements crucial guards",
+          "example_good": "adds permission checks"
+        },
+        {
+          "term": "testament",
+          "lift": 34.00,
+          "replacement": "example / implementation",
+          "example_bad": "stands as a testament to modular design",
+          "example_good": "splits handlers into separate packages"
+        },
+        {
+          "term": "plainly",
+          "lift": 51.20,
+          "replacement": "directly / explicitly",
+          "example_bad": "plainly rejects unauthenticated calls",
+          "example_good": "returns 401 on missing auth token"
+        },
+        {
+          "term": "tapestry",
+          "lift": 82.00,
+          "replacement": "system / suite / structure",
+          "example_bad": "enriches the event logging tapestry",
+          "example_good": "adds structured logging events"
+        }
+      ]
+    },
+    "empty_meta_framing": {
+      "severity": "high",
+      "penalty": 20,
+      "description": "Conversational assistant filler phrases pasted directly into PR descriptions.",
+      "terms": [
+        {
+          "term": "in this pull request",
+          "lift": 28.00,
+          "replacement": "",
+          "example_bad": "In this pull request, we address...",
+          "example_good": "Fixes..."
+        },
+        {
+          "term": "this change aims to",
+          "lift": 31.50,
+          "replacement": "",
+          "example_bad": "This change aims to resolve...",
+          "example_good": "Resolves..."
+        },
+        {
+          "term": "feel free to",
+          "lift": 48.00,
+          "replacement": "",
+          "example_bad": "Feel free to let me know if you want changes.",
+          "example_good": ""
+        },
+        {
+          "term": "as an ai",
+          "lift": 99.90,
+          "replacement": "",
+          "example_bad": "As an AI assistant, I have verified...",
+          "example_good": "Verified with npm test."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,5 @@
+# <type>(<scope>): <imperative subject, max 72 chars>
+# |<----  Using a Maximum of 72 Characters  ---------------------------->|
+
+# Explain why this change is being made in plain technical terms.
+# No AI filler, buzzwords, or metaphors.

@@ -1,0 +1,20 @@
+name: 'Anti-Slop PR Linter'
+description: 'Lints Pull Request descriptions and titles to prevent AI slop and ensure plain technical summaries.'
+author: 'VernSG'
+inputs:
+  pr_body:
+    description: 'The body of the pull request'
+    required: true
+  fail_on_slop:
+    description: 'Whether to fail the CI step if AI slop is detected'
+    required: false
+    default: 'true'
+runs:
+  using: 'composite'
+  steps:
+    - name: Run Anti-Slop Check
+      shell: bash
+      env:
+        PR_TEXT: ${{ inputs.pr_body }}
+      run: |
+        npx @vernsg/anti-slop lint "$PR_TEXT"

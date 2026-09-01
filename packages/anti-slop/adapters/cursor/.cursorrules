@@ -1,0 +1,6 @@
+# Cursor Anti-Slop Rules
+
+- When generating commit messages or PR descriptions, never use AI cliché buzzwords:
+  - Do not use: "load-bearing", "seam", "quietly", "latent", "survived", "genuine", "robust", "seamless", "delve", "orchestrate".
+- Ground all explanations in technical diff facts: specify exact files, functions, and bugs.
+- Limit PR summaries to max 2 plain sentences without filler.

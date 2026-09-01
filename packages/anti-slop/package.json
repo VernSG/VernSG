@@ -1,0 +1,35 @@
+{
+  "name": "@vernsg/anti-slop",
+  "version": "1.0.0",
+  "description": "Empirical developer toolkit and multi-agent skills to eliminate AI slop from PR descriptions and commit messages.",
+  "main": "src/index.js",
+  "bin": {
+    "unslop": "bin/unslop.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VernSG/VernSG.git",
+    "directory": "packages/anti-slop"
+  },
+  "keywords": [
+    "anti-slop",
+    "pull-request",
+    "commitlint",
+    "agent-skills",
+    "antigravity",
+    "claude-code",
+    "cursorrules",
+    "linter"
+  ],
+  "author": "VernSG",
+  "license": "MIT",
+  "scripts": {
+    "test": "node test/linter.test.js && node test/installer.test.js"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

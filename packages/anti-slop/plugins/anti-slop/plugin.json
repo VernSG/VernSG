@@ -1,0 +1,12 @@
+{
+  "name": "anti-slop",
+  "version": "1.0.0",
+  "description": "Antigravity plugin bundle containing anti-slop PR generator, commit message rules, and clean code review skills.",
+  "skills": [
+    "../../skills/anti-slop-pr",
+    "../../skills/anti-slop-commit",
+    "../../skills/anti-slop-review"
+  ],
+  "author": "VernSG",
+  "license": "MIT"
+}
