@@ -1,84 +1,62 @@
-<div align="center">
+# anti-slop
 
-# 🛡️ Anti-Slop (`@vernsg/anti-slop`)
+Tooling and agent guidelines to eliminate LLM buzzwords from pull request descriptions and git commit messages.
 
-**Stop AI slop from polluting your GitHub PR descriptions and commit messages.**
+![The Load-Bearing Vocabulary of Claude](assets/research.png)
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](./LICENSE)
-[![Node: >=18](https://img.shields.io/badge/node-%3E%3D18.0.0-brightgreen.svg)]()
-[![Slop Free](https://img.shields.io/badge/AI--Slop-0%25-success.svg)]()
+According to research by [Louis Abraham](https://louisabraham.github.io/load-bearing/) analyzing 461,000+ GitHub PRs, 45% of human-attributed pull requests in 2026 share the exact same LLM vocabulary cluster. Words like "load-bearing" (+123x frequency spike), "seam", "quietly", "latent", and "genuine" increasingly replace concrete technical explanations with vague architectural metaphors.
 
-<br />
+`anti-slop` provides multi-agent configuration rules, PR templates, and a CLI linter to enforce plain, diff-grounded descriptions.
 
-<img src="./assets/research.png" alt="The Load-Bearing Vocabulary of Claude Research Dashboard" width="100%" />
+## Quick Start
 
-<br />
-
-```text
-❌ "This PR quietly refactors a load-bearing seam across the auth layer..."
-⬇
-✅ "Fixes token refresh race condition by adding a mutex lock in auth.go."
-```
-
-</div>
-
----
-
-## 🚨 The Problem
-
-A [statistical study of 461,000+ GitHub PRs](https://louisabraham.github.io/load-bearing/) (Louis Abraham, 2026) revealed that **45% of pull requests now share the exact same AI vocabulary cluster**.
-- **Over-inflated jargon:** Words like *"load-bearing"* spiked by **+12,304% ($123\times$)**, along with *"quietly"*, *"seam"*, *"latent"*, and *"genuine"*.
-- **Reviewer fatigue:** Reviewers stop reading bloated 3-paragraph summaries and look only at the raw diff.
-- **Obscured mechanics:** AI buzzwords replace concrete technical facts (mutexes, regex validation, index additions).
-
----
-
-## ⚡ Quick Start
-
-### 1. Install Rules for Your AI Agents (1 Second)
-Scaffold rules directly into your project for **Antigravity, Cursor, Claude Code, Windsurf, Copilot, & Gemini**:
+Scaffold rules into your project for Antigravity, Claude Code, Cursor, Windsurf, Copilot, or Gemini:
 
 ```bash
 npx @vernsg/anti-slop install --agent all
 ```
 
-### 2. Lint Any PR Text or File
+Or target specific tools:
+
 ```bash
-npx @vernsg/anti-slop lint "This PR quietly refactors the load-bearing seam"
+npx @vernsg/anti-slop install --agent cursor,claude
 ```
 
----
+## CLI Linter
 
-## 📐 The Two-Sentence Rule
+Check a PR description or commit message:
 
-Summarize any PR in **maximum 2 plain sentences** (Sentence 1: What changed technically, Sentence 2: Why it was needed).
+```bash
+npx @vernsg/anti-slop lint "This PR quietly refactors the load-bearing auth seam"
+```
 
-| Scenario | ❌ AI Slop | ✅ Anti-Slop Senior Engineer |
-| :--- | :--- | :--- |
-| **Bugfix** | *"Quietly resolves a latent race condition by protecting the load-bearing auth seam."* | **"Adds mutex lock to `RefreshToken` to prevent race conditions during concurrent token refreshes."** |
-| **Validation** | *"Delves into user onboarding and orchestrates a robust validation layer."* | **"Returns HTTP 400 when registration email fails regex validation."** |
-| **Database** | *"Executes a pivotal adjustment to streamline the order retrieval tapestry."* | **"Adds composite index on `(user_id, created_at)` to `orders` table to speed up user history queries."** |
+## The Two-Sentence Rule
 
----
+Summarize pull requests in two plain sentences:
+1. **What changed:** The concrete technical mechanism or modification.
+2. **Why:** The specific problem solved or capability enabled.
 
-## 🤖 Supported Agents
+| Type | Before (AI generated) | After (Grounded) |
+| --- | --- | --- |
+| Bugfix | Quietly resolves a latent race condition by protecting the load-bearing auth seam. | Adds mutex lock to `RefreshToken` to prevent concurrent token refresh race conditions. |
+| Validation | Delves into user onboarding and orchestrates a robust validation layer. | Returns HTTP 400 when registration email fails regex validation. |
+| Migration | Executes a pivotal adjustment to streamline the order retrieval tapestry. | Adds composite index on `(user_id, created_at)` to `orders` table. |
 
-| Agent | Config File | Install Command |
-| :--- | :--- | :--- |
-| **Antigravity** | `.agents/skills/anti-slop-pr/SKILL.md` | `npx @vernsg/anti-slop install --agent antigravity` |
-| **Claude Code** | `CLAUDE.md` | `npx @vernsg/anti-slop install --agent claude` |
-| **Cursor IDE** | `.cursorrules` | `npx @vernsg/anti-slop install --agent cursor` |
-| **Windsurf** | `.windsurfrules` | `npx @vernsg/anti-slop install --agent windsurf` |
-| **Gemini IDE** | `GEMINI.md` | `npx @vernsg/anti-slop install --agent gemini` |
-| **GitHub Copilot** | `.github/copilot-instructions.md` | `npx @vernsg/anti-slop install --agent copilot` |
+## Supported Agents
 
----
+| Agent | Config Target | Install Command |
+| --- | --- | --- |
+| Antigravity | `.agents/skills/anti-slop-pr/SKILL.md` | `npx @vernsg/anti-slop install --agent antigravity` |
+| Claude Code | `CLAUDE.md` | `npx @vernsg/anti-slop install --agent claude` |
+| Cursor | `.cursorrules` | `npx @vernsg/anti-slop install --agent cursor` |
+| Windsurf | `.windsurfrules` | `npx @vernsg/anti-slop install --agent windsurf` |
+| Gemini | `GEMINI.md` | `npx @vernsg/anti-slop install --agent gemini` |
+| Copilot | `.github/copilot-instructions.md` | `npx @vernsg/anti-slop install --agent copilot` |
 
-## ⚙️ Automated CI / Git Hook
+## GitHub Action
 
-### GitHub Action (`.github/workflows/anti-slop.yml`)
 ```yaml
-name: Anti-Slop Linter
+name: anti-slop
 on: [pull_request]
 jobs:
   lint:
@@ -88,8 +66,6 @@ jobs:
       - run: npx @vernsg/anti-slop lint "${{ github.event.pull_request.body }}"
 ```
 
----
+## License
 
-## 📄 License & Reference
-- **Research Source:** [Louis Abraham - The load-bearing vocabulary of Claude](https://louisabraham.github.io/load-bearing/)
-- **License:** [MIT](./LICENSE)
+MIT
