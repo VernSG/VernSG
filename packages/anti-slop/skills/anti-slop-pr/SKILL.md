@@ -1,43 +1,25 @@
 ---
 name: anti-slop-pr
-description: >-
-  Enforce high-signal, zero-slop PR descriptions. Activate this skill whenever the user
-  asks to write, summarize, or format a Pull Request description, git diff, or release summary.
+description: Enforce high-signal, zero-slop pull request descriptions grounded directly in technical code diffs.
 ---
 
-# Anti-Slop PR Description Protocol
+# Anti-Slop PR Description
 
-This skill enforces high-signal, factual Pull Request descriptions. It eliminates conversational AI filler, architectural hyperbole, and poetic metaphors, grounding every explanation directly in the technical diff.
+Generates concise, senior-engineer grade Pull Request descriptions by eliminating conversational AI filler, architectural hyperbole, and buzzwords.
 
----
+## When to Use This Skill
 
-## The 4-Step Execution Protocol
+- When drafting or summarizing a GitHub pull request description from git diffs
+- When preparing release summaries or technical changelogs
+- When writing clean, factual code changes without conversational filler
 
-When asked to generate or review a PR description, execute these 4 steps in order:
+## What This Skill Does
 
-```mermaid
-flowchart LR
-    A[1. Inspect Diff] --> B[2. Identify Mechanism]
-    B --> C[3. Apply 2-Sentence Rule]
-    C --> D[4. Pre-flight Slop Check]
-    D --> E[5. Render Template]
-```
+1. **Enforces The Two-Sentence Rule**: Summarizes the entire PR in maximum 2 plain sentences (Sentence 1: What changed technically, Sentence 2: Why it was needed).
+2. **Eliminates AI Buzzwords**: Filters out over-represented AI clichés based on empirical cluster analysis of 461k+ PRs (Louis Abraham, 2026).
+3. **Strict Diff Grounding**: Names only exact files, functions, and code mechanisms present in the git diff.
 
-### Step 1: Inspect the Raw Diff
-- Focus strictly on files modified, functions touched, parameters added, or queries altered.
-- Disregard narrative summaries from chat history; ground explanations only in code facts.
-
-### Step 2: Identify the Core Technical Mechanism
-- State the root cause (e.g., race condition, off-by-one index, missing null check, unindexed column).
-- State the programmatic fix (e.g., added mutex lock, added regex validation, created composite DB index).
-
-### Step 3: Apply the Two-Sentence Rule
-Draft the `## Summary` section using **maximum 2 plain sentences**:
-- **Sentence 1 (What):** What was changed technically.
-- **Sentence 2 (Why):** Why it was needed / what problem was solved.
-
-### Step 4: Pre-Flight Slop Self-Check
-Before returning the output, scan your draft against the **Blacklist Table** below. If any term appears, replace it with its plain engineering equivalent:
+### Banned Lexicon Reference
 
 | Banned AI Term | Empirical Lift | Plain Engineering Replacement |
 | :--- | :--- | :--- |
@@ -52,31 +34,47 @@ Before returning the output, scan your draft against the **Blacklist Table** bel
 | `seamless` | **59×** | `direct`, `automated` |
 | `orchestrate` | **45×** | `coordinates`, `calls`, `runs` |
 
----
+## How to Use
 
-## Standard Output Template
+### Basic Usage
 
-Format all PR descriptions strictly using this markdown layout:
-
-```markdown
-## Summary
-[Sentence 1: What changed technically]. [Sentence 2: Why it was needed].
-
-## Changes
-- `<file_path>`: [Exact technical modification]
-- `<file_path>`: [Exact technical modification]
-
-## Verification
-- [Automated command or manual verification step]
+```text
+Write a pull request description for my current git changes.
 ```
 
-### Edge-Case Handling:
-- **Breaking Changes:** If the change breaks backwards compatibility, add a `## Breaking Changes` section with exact migration instructions. Do not use dramatic words like *"tectonic shift"*.
-- **Database Migrations:** State the exact table, column names, and index types added/dropped.
-- **Dependency Updates:** State the exact package name and version range diff (e.g. `Upgrade express from 4.18.0 to 4.21.0`).
+### Advanced Usage
 
----
+```text
+Summarize the staged git diff following the 2-sentence anti-slop rule and list verification steps.
+```
 
-## Extended References
-- Comprehensive Banned Vocabulary: [references/banned-vocabulary.md](./references/banned-vocabulary.md)
-- Paired Diff Translations: [examples/paired-diffs.md](./examples/paired-diffs.md)
+## Example
+
+**User**: "Write a PR description for the recent auth concurrency fix."
+
+**Output**:
+```markdown
+## Summary
+Adds a mutex lock to `RefreshToken` to prevent race conditions during concurrent token refreshes.
+
+## Changes
+- `auth/token.go`: Wrapped store lookup with `s.mu.Lock()` and `defer s.mu.Unlock()`.
+
+## Verification
+- `go test -race ./auth/...`
+```
+
+**Inspired by:** [Louis Abraham's empirical PR research](https://louisabraham.github.io/load-bearing/) and [VernSG/anti-slop](https://github.com/VernSG/anti-slop).
+
+## Tips
+
+- Focus on the technical mechanism rather than narrative prose.
+- State facts, not philosophy: a 5-line bugfix is just a bugfix, not a system redesign.
+- For breaking changes, list explicit migration steps under `## Breaking Changes` without dramatic words like *"tectonic shift"*.
+- Pair with the `@vernsg/anti-slop` CLI linter for automated CI enforcement.
+
+## Common Use Cases
+
+- Daily GitHub pull request authoring
+- Open-source repository contribution hygiene
+- Automated CI/CD PR description linting

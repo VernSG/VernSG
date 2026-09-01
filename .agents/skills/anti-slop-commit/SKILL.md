@@ -1,25 +1,22 @@
 ---
 name: anti-slop-commit
 description: >-
-  Enforce plain, concise Conventional Commit messages. Activate this skill whenever the user
-  asks to write, generate, or review a git commit message.
+  Enforce plain, concise Conventional Commit messages. Eliminates conversational AI filler
+  and poetic words in commit titles and bodies.
 ---
 
-# Anti-Slop Commit Message Protocol
+# Anti-Slop Commit Message Generator
 
-Generates clean, imperative, conventional git commit messages with zero AI adjectives or conversational filler.
+Generates clean, imperative, conventional git commit messages with zero AI adjectives or metaphorical commentary.
 
 ---
 
-## Commit Execution Rules
+## Commit Rules
 
 1. **Format**: `<type>(<optional scope>): <imperative subject>`
-2. **Standard Types**: `feat`, `fix`, `docs`, `style`, `refactor`, `perf`, `test`, `build`, `ci`, `chore`.
-3. **Subject Line Constraints**:
-   - Maximum **72 characters**.
-   - Imperative mood ("add mutex lock", not "added mutex lock" or "quietly adds mutex lock").
-   - ❌ Never use AI adjectives: *"quietly resolve load-bearing token issue"*.
-   - ✅ State factual action: *"add mutex lock to prevent token refresh race condition"*.
-4. **Body (Optional)**:
-   - Provide a plain technical explanation of *why* the commit was necessary if the subject line is insufficient.
-   - Do not include conversational remarks (*"Feel free to review..."*).
+2. **Types**: `feat`, `fix`, `docs`, `style`, `refactor`, `perf`, `test`, `build`, `ci`, `chore`.
+3. **No Fluff in Subject**:
+   - ❌ `fix(auth): quietly resolve load-bearing token refresh issue`
+   - ✅ `fix(auth): add mutex lock to prevent refresh race condition`
+4. **Max 72 characters** for subject line.
+5. **Body**: Plain technical explanation of why the change was made without narrative adjectives.
