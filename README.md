@@ -1,18 +1,18 @@
-<p align="center">
-  <a href="https://vernsg.is-a.dev">
-    <img src="./NotFound.png" alt="Header" width="340" />
-  </a>
-</p>
+<div align="center">
 
-<h3 align="center">
+<a href="https://vernsg.is-a.dev">
+  <img src="./NotFound.png" alt="Header" width="340" />
+</a>
+
+<h3>
   <code>&lt; Muhammad Yusuf / VernSG /&gt;</code>
 </h3>
 
-<p align="center">
+<p>
   <samp>Open-Source Contributor</samp>
 </p>
 
-<p align="center">
+<p>
   <a href="https://vernsg.is-a.dev"><code>[ portfolio ]</code></a> &nbsp;•&nbsp;
   <a href="https://wakatime.com/@VernSG"><code>[ wakatime ]</code></a> &nbsp;•&nbsp;
   <a href="https://discord.com/users/vernsg"><code>[ discord ]</code></a>
@@ -20,9 +20,9 @@
 
 <br />
 
-<table width="100%">
+<table align="center" style="margin-left: auto; margin-right: auto; max-width: 820px; width: 100%;">
   <tr>
-    <td width="50%" valign="top">
+    <td width="50%" valign="top" align="left">
       <h4 align="center"><code>// upstream contributions</code></h4>
       <ul>
         <li>
@@ -44,7 +44,7 @@
         </li>
       </ul>
     </td>
-    <td width="50%" valign="top">
+    <td width="50%" valign="top" align="left">
       <h4 align="center"><code>// authored packages & projects</code></h4>
       <ul>
         <li>
@@ -67,3 +67,5 @@
     </td>
   </tr>
 </table>
+
+</div>
