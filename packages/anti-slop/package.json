@@ -1,9 +1,10 @@
 {
   "name": "@vernsg/anti-slop",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Empirical developer toolkit and multi-agent skills to eliminate AI slop from PR descriptions and commit messages.",
   "main": "src/index.js",
   "bin": {
+    "anti-slop": "bin/unslop.js",
     "unslop": "bin/unslop.js"
   },
   "repository": {
