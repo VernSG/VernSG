@@ -1,6 +1,19 @@
 # Cursor Anti-Slop Rules
 
-- When generating commit messages or PR descriptions, never use AI cliché buzzwords:
-  - Do not use: "load-bearing", "seam", "quietly", "latent", "survived", "genuine", "robust", "seamless", "delve", "orchestrate".
-- Ground all explanations in technical diff facts: specify exact files, functions, and bugs.
-- Limit PR summaries to max 2 plain sentences without filler.
+## Core Rule
+Every factual claim in commit messages, PR descriptions, and code reviews must trace to a specific line in the diff, a test result, or explicit context. If you cannot point to evidence, do not make the claim.
+
+## Commit Messages & PR Descriptions
+- Ground all explanations in the diff: specify exact files, functions, and mechanisms.
+- Do not assert effects (performance, reliability, security) without citing a test or benchmark.
+- Limit PR summaries to max 2 plain sentences. Changes and Verification sections have no limit.
+- Check for repository conventions (CONTRIBUTING.md, .commitlintrc, PR templates) before applying defaults.
+
+## Vocabulary Heuristic
+Avoid statistically overrepresented AI terms unless used in their primary technical meaning:
+- Do not use: "load-bearing", "seam", "quietly", "latent", "survived", "genuine", "robust", "seamless", "delve", "orchestrate".
+
+## Code Reviews
+- Never fabricate findings. If the diff is correct, say "No defects found."
+- Classify confidence: [Confirmed], [Likely], [Uncertain], [Style], [No findings].
+- Scope reviews to the diff. State what you would need to inspect for uncertain findings.

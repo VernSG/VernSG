@@ -64,7 +64,8 @@ function lint(text, options = {}) {
     .replace(/```[\s\S]*?```/g, '')
     .replace(/`[^`]*`/g, '')
     .replace(/https?:\/\/\S+/g, '')
-    .replace(/\b\w+\.\w+\b/g, '') // strip file.ext or domain.com
+    .replace(/\b\w+\.(js|ts|go|py|rb|php|md|yml|yaml|json|toml|rs|java|kt|swift|css|html|sql|sh|txt|cfg|ini|xml|csv|lock|mod|sum)\b/gi, '') // strip file extensions
+    .replace(/\b\w+\.(com|org|net|io|dev|co)\b/gi, '') // strip domains
     .replace(/\.{2,}/g, ''); // strip ellipses (...)
 
   const sentences = textWithoutCode

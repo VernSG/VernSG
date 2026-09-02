@@ -118,7 +118,7 @@
         {
           "term": "robust",
           "lift": 66.80,
-          "replacement": "error-handled / resilient / tested",
+          "replacement": "error-handled / retries on failure / tested",
           "example_bad": "provides a robust mechanism for errors",
           "example_good": "adds retry logic with exponential backoff"
         },

@@ -42,4 +42,71 @@ const res3 = lint(wordyText, { enforceSentenceCount: true, maxSentences: 2 });
 assert(res3.exceedsSentenceLimit, 'Should flag excessive sentence count');
 console.log('✔ Test 3 passed: Sentence limit warning verified.');
 
+// Test 4: False Positive - Legitimate technical use of "latent" in ML context
+const mlText = `
+Adds latent space visualization to the embedding pipeline.
+Uses t-SNE projection on the latent vectors from the encoder output.
+`;
+
+const res4 = lint(mlText);
+// This SHOULD flag "latent" (the linter is a statistical heuristic, not context-aware).
+// The test documents this known limitation — the linter cannot distinguish
+// "latent race condition" (AI slop) from "latent space" (ML term).
+assert(res4.detected.some(d => d.matchedRule === 'latent'),
+  'Linter flags "latent" even in ML context (known limitation - context-unaware)');
+console.log('✔ Test 4 passed: Known false-positive behavior documented for "latent".');
+
+// Test 5: Text with technical identifiers should not break sentence counting
+const technicalText = `
+Updates req.body validation in auth.ts to check for missing fields.
+Adds module.exports for the new validator.
+`;
+
+const res5 = lint(technicalText, { enforceSentenceCount: true, maxSentences: 2 });
+assert.strictEqual(res5.cleanPass, true, 'Technical identifiers should not inflate sentence count');
+assert.strictEqual(res5.exceedsSentenceLimit, false, 'Should not exceed 2-sentence limit');
+console.log('✔ Test 5 passed: Technical identifiers preserved in sentence counting.');
+
+// Test 6: Unsupported claims with zero banned words still pass the linter
+// This test documents the epistemic gap — the linter catches vocabulary slop
+// but NOT unsupported claims like "improves reliability" or "prevents data loss".
+const epistemicSlopText = `
+Adds error handling to improve system reliability and prevent data corruption under concurrent load.
+`;
+
+const res6 = lint(epistemicSlopText);
+assert.strictEqual(res6.cleanPass, true,
+  'Epistemic slop with no banned words passes the linter (known gap - linter is vocabulary-only)');
+assert.strictEqual(res6.slopScore, 0, 'Score should be 0 for text with no flagged vocabulary');
+console.log('✔ Test 6 passed: Epistemic gap documented (unsupported claims pass vocabulary linter).');
+
+// Test 7: Code blocks should be excluded from vocabulary scanning
+const codeBlockText = `
+Adds validation to user input.
+
+\`\`\`go
+// This orchestrates the retry logic
+func orchestrate(ctx context.Context) error {
+    return nil
+}
+\`\`\`
+`;
+
+const res7 = lint(codeBlockText);
+// "orchestrate" inside code blocks should still be detected by the current linter
+// since it scans full text. This test documents the behavior.
+assert(res7.detected.some(d => d.matchedRule === 'orchestrate'),
+  'Current linter scans inside code blocks (known limitation)');
+console.log('✔ Test 7 passed: Code block scanning behavior documented.');
+
+// Test 8: Empty meta framing detection
+const metaFramingText = `
+In this pull request, we address the login timeout issue. This change aims to improve the user experience.
+`;
+
+const res8 = lint(metaFramingText);
+assert(res8.detected.some(d => d.matchedRule === 'in this pull request'), 'Should detect meta framing');
+assert(res8.detected.some(d => d.matchedRule === 'this change aims to'), 'Should detect meta framing');
+console.log('✔ Test 8 passed: Meta framing correctly detected.');
+
 console.log('\nAll Linter tests passed successfully!');

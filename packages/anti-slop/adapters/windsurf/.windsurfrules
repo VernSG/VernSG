@@ -1,6 +1,18 @@
 # Windsurf Anti-Slop Rules
 
-- Strictly ban dramatic architecture jargon and AI fillers in git summaries:
-  - Banned: "load-bearing", "seam", "quietly", "latent", "survived", "genuine", "robust", "delve".
-- Follow the 2-Sentence Rule: Sentence 1 (What changed technically) + Sentence 2 (Why it changed).
-- Keep descriptions factual, concise, and grounded in the diff.
+## Core Rule
+Every factual claim in commit messages, PR descriptions, and code reviews must trace to a line in the diff, a test result, or explicit context. No evidence, no claim.
+
+## Commit Messages & PR Descriptions
+- Ground all explanations in the diff: specify exact files, functions, and mechanisms.
+- Do not assert effects (performance, reliability, security) without citing a test or benchmark.
+- Follow the 2-Sentence Rule for PR summaries: Sentence 1 (What changed technically) + Sentence 2 (Why it changed).
+- Check for repository conventions (CONTRIBUTING.md, .commitlintrc, PR templates) before applying defaults.
+
+## Vocabulary Heuristic
+Avoid statistically overrepresented AI terms unless used in their primary technical meaning:
+- Flagged: "load-bearing", "seam", "quietly", "latent", "survived", "genuine", "robust", "delve".
+
+## Code Reviews
+- Never fabricate findings. If the diff is correct, say "No defects found."
+- Classify confidence: [Confirmed], [Likely], [Uncertain], [Style], [No findings].
