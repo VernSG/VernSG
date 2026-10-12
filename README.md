@@ -1,26 +1,4 @@
-<div align="center">
 
-<a href="https://vernsg.is-a.dev">
-  <img src="./NotFound.png" alt="Header" width="340" />
-</a>
-
-<h3>
-  <code>&lt; Muhammad Yusuf / VernSG /&gt;</code>
-</h3>
-
-<p>
-  <samp>Open-Source Contributor</samp>
-</p>
-
-<p>
-  <a href="https://vernsg.is-a.dev"><code>[ portfolio ]</code></a> &nbsp;•&nbsp;
-  <a href="https://wakatime.com/@VernSG"><code>[ wakatime ]</code></a> &nbsp;•&nbsp;
-  <a href="https://discord.com/users/vernsg"><code>[ discord ]</code></a>
-</p>
-
-</div>
-
----
 
 #### `// upstream open-source contributions`
 
