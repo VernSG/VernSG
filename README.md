@@ -16,11 +16,3 @@
 > ↳ <a href="https://github.com/cline/kanban/pull/436">#436</a> Allow custom model ID input in Web UI
 
 ---
-
-#### `// honors & competitions`
-
-> **KIDECO Innovation Challenge 2026**  
-> ↳ 2nd Honorable Mention — Hackathon Track (PT Kideco Jaya Agung)
-
-> **Digital Solution Prototype Competition**  
-> ↳ 3rd Place Winner — Team *Saya Akan Lawan* (HMTI STITEK)
